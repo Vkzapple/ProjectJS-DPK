@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changecolor do while by eple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Item</h1>
+        <ul id="itemList">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+        </ul>
+        
+        <div class="color-controls">
+            <label>
+                Warna Elemen Genap:
+                <select id="evenColor" onchange="updateColors()">
+                    <option value="#4CAF50">Green</option>
+                    <option value="#2196F3">Blue</option>
+                    <option value="#F44336">Red</option>
+                    <option value="#9C27B0">Purple</option>
+                </select>
+            </label>
+            <label>
+                Warna Elemen Ganjil:
+                <select id="oddColor" onchange="updateColors()">
+                    <option value="#2196F3">Blue</option>
+                    <option value="#4CAF50">Green</option>
+                    <option value="#F44336">Red</option>
+                    <option value="#9C27B0">Purple</option>
+                </select>
+            </label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter by eple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="position: absolute; top: 20%;">farenheit -> celcius by epel</h1>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="formula">
+            (°F - 32) × 5/9 = °C
+        </div>
+        <div class="input-group">
+            <label for="fahrenheit">Enter Temperature in Fahrenheit:</label>
+            <input type="number" id="fahrenheit" placeholder="Enter temperature">
+        </div>
+        <button onclick="convertTemperature()">Convert to Celsius</button>
+        <div id="result"></div>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>

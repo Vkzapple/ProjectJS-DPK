@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Konverter Suhu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Konverter Suhu</h1>
+  <p>Masukkan suhu dalam Fahrenheit:</p>
+  <input type="number" id="fahrenheit" placeholder="Contoh: 32">
+  <button onclick="konversiSuhu()">Konversi</button>
+  <p>Suhu dalam Celsius adalah: <span id="celsius"></span></p>
+
+  <script>
+    function konversiSuhu() {
+      // ini ambil nilai suhu dari input
+    let fahrenheit = parseFloat(document.getElementById("fahrenheit").value);
+    
+      //itung suhu dalam Celsius
+      let celsius = (fahrenheit - 32) * 5/9;
+
+      //hasil konversi
+      document.getElementById("celsius").textContent = celsius.toFixed(2) + " °C";
+    }
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Jam</title>
+    <style type="text/css">
+        #jam {
+            font-size: 40px;
+            padding: 20px;
+            margin: auto;
+            width: 50%;
+            border:5px solid black;
+            border-radius: 2rem;
+            transition: border-color 0.5s;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="jam">00:00:00</div>
+    <script type="text/javascript">
+        function updatejam() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2,'0');
+            const minutes = String(now.getMinutes()).padStart(2,'0');
+            const seconds = String(now.getSeconds()).padStart(2,'0');
+
+            document.getElementById('jam').textContent = `${hours}:${minutes}:${seconds}`;
+            const borderColor = seconds % 2 === 0 ? 'red' : 'blue';
+            document.getElementById('jam').style.borderColor = borderColor;
+        }
+        setInterval(updatejam,1000);
+        updatejam();
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar mobil</title>
+    <style type="text/css">
+        .genap {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mobil</h1>
+    <ul id="mobil">
+        <li>Actura</li>
+        <li>Alfa Remeo</li>
+        <li>Aston Martin</li>
+        <li>Audi</li>
+        <li>Bentley</li>
+        <li>BMW</li>
+        <li>Bugatti</li>
+        <li>Buick</li>
+    </ul>
+    <button onclick="changeEvenItems()">Klick mengubah Genap</button>
+    <script type="text/javascript">
+        function changeEvenItems(){
+            const listItems = document.querySelectorAll("#mobil li"); 
+            listItems.forEach((item, index) => {
+                if ((index + 1) % 2 === 0) {
+                    item.classList.toggle("genap");
+                }
+            });
+        }
+    </script>
+</body>
+</html>

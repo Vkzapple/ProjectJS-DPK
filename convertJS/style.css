@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+        :root {
+            --pastel-orange: #FFB580;
+            --light-orange: #FFE5D4;
+            --dark-orange: #FF8533;
+        }
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-orange);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+
+        h1 {
+            color: var(--dark-orange);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+
+        .formula {
+            background-color: var(--pastel-orange);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+        .input-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark-orange);
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 2px solid var(--pastel-orange);
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: var(--pastel-orange);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--dark-orange);
+        }
+
+        #result {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: var(--light-orange);
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+        }

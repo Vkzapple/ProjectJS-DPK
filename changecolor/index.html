@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daftar Buah-buahan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Buah-buahan</h1>
+        
+        <div id="fruitList">
+            <div class="fruit-item">Manggis</div>
+            <div class="fruit-item">Manggah</div>
+            <div class="fruit-item">Alpukat</div>
+            <div class="fruit-item">Sirsak</div>
+            <div class="fruit-item">Durian</div>
+            <div class="fruit-item">Rambutan</div>
+        </div>
+
+        <div class="color-section">
+            <h2>Warna Teks</h2>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="textColor" onclick="changeColor('#2196F3')"> Biru
+                </label>
+                <label>
+                    <input type="radio" name="textColor" onclick="changeColor('#4CAF50')"> Hijau
+                </label>
+                <label>
+                    <input type="radio" name="textColor" onclick="changeColor('#FFC107')"> Kuning
+                </label>
+            </div>
+        </div>
+
+        <div class="color-section">
+            <h2>Warna Hover</h2>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="hoverColor" onclick="changeHoverColor('#ffcdd2')"> Merah
+                </label>
+                <label>
+                    <input type="radio" name="hoverColor" onclick="changeHoverColor('#d7ccc8')"> Cokelat
+                </label>
+                <label>
+                    <input type="radio" name="hoverColor" onclick="changeHoverColor('#f8bbd0')"> Pink
+                </label>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
