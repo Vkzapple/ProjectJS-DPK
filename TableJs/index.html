@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table data buah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Form untuk input data -->
+    <div class="form-container">
+        <div class="form-group">
+            <label>Nama Buah</label>
+            <input type="text" id="namaBuah">
+        </div>
+        <div class="form-group">
+            <label>Berat</label>
+            <input type="number" id="berat"> kg
+        </div>
+        <button onclick="simpanData()">Simpan</button>
+    </div>
+
+    <!-- Tabel untuk menampilkan data -->
+    <table id="tabelBuah">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama Buah</th>
+                <th>Berat</th>
+                <th class="action">Tindakan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data awal -->
+            <tr>
+                <td>1</td>
+                <td>Rambutan</td>
+                <td>2kg</td>
+                <td><button onclick="hapusBaris(this)">Hapus</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mangga</td>
+                <td class="red-bg">6kg</td>
+                <td><button onclick="hapusBaris(this)">Hapus</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jeruk</td>
+                <td>2kg</td>
+                <td><button onclick="hapusBaris(this)">Hapus</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Melon</td>
+                <td class="red-bg">7kg</td>
+                <td><button onclick="hapusBaris(this)">Hapus</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

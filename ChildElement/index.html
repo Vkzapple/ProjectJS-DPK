@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Generator by eple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input-area">
+        <div>
+            <label>Text: </label>
+            <input type="text" id="teks">
+        </div>
+        <div>
+            <label>Jumlah: </label>
+            <input type="number" id="jumlah" value="0" min="0">
+        </div>
+
+        <p>Warna Teks:</p>
+        <input type="radio" name="warnaTeks" value="blue" id="biru"> 
+        <label for="biru">Biru</label>
+        <input type="radio" name="warnaTeks" value="green" id="hijau">
+        <label for="hijau">Hijau</label>
+        <input type="radio" name="warnaTeks" value="yellow" id="kuning">
+        <label for="kuning">Kuning</label>
+
+        <p>Warna Hover:</p>
+        <input type="radio" name="warnaHover" value="red" id="merah">
+        <label for="merah">Merah</label>
+        <input type="radio" name="warnaHover" value="chocolate" id="cokelat">
+        <label for="cokelat">Cokelat</label>
+        <input type="radio" name="warnaHover" value="pink" id="pink">
+        <label for="pink">Pink</label>
+    </div>
+
+    <ul id="daftarItem"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+        *{
+            margin: 0;
+            padding: 0;
+        }
+                body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .input-area {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            width: 70px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 200px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+
+        input[type="number"] {
+            width: 100px;
+        }
+
+        .radio-group {
+            background-color: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+            border: 1px solid #eee;
+        }
+
+        .radio-group p {
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #444;
+        }
+
+        .radio-option {
+            margin: 5px 15px 5px 0;
+            display: inline-block;
+        }
+
+        .radio-option input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 12px 20px;
+            margin: 8px 0;
+            border-radius: 6px;
+            background-color: #f8f9fa;
+            border: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+        }
+
+        /* Animasi sederhana untuk item list */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        li {
+            animation: fadeIn 0.3s ease;
+        }
