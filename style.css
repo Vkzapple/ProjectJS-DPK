@@ -1,0 +1,21 @@
+/* Handphone */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        background-color: lightgray;
+    }
+}
+/* tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* desktop */
+@media (min-width: 901px) {
+    body {
+        font-size: 18px;
+        background-color: white;
+    }
+}
