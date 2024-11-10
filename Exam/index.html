@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Generator-epel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Exam Generator</h2>
+
+    <div class="form-group">
+      <label>Question:</label>
+      <input type="text" id="question" placeholder="Masukkan pertanyaan" />
+      <div id="questionError" class="error"></div>
+    </div>
+
+    <div class="form-group">
+      <label>Options (pisahkan dengan koma):</label>
+      <input type="text" id="options" placeholder="Contoh: CSS,JS,CSJ,HTML" />
+      <div id="optionsError" class="error"></div>
+    </div>
+
+    <div class="form-group">
+      <label>Time (menit):</label>
+      <input type="number" id="time" min="1" value="4" />
+      <div id="timeError" class="error"></div>
+    </div>
+
+    <button onclick="generateQuestion()">Generate</button>
+
+    <table id="questionTable">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Question</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody id="questionList">
+        <!-- soal disini -->
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

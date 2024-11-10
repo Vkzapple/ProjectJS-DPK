@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.input-group {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.input-group label {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+}
+
+.input-group input {
+  margin-right: 5px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 2px solid black;
+  padding: 8px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: white;
+  font-weight: bold;
+}
+
+.berat-merah {
+  background-color: red;
+  color: white;
+}
+
+#addButton {
+  margin-left: 100px;
+  margin-top: 5px;
+}
+
+button {
+  margin: 2px;
+  padding: 2px 8px;
+}
+
+.action-buttons {
+  white-space: nowrap;
+}
+
+/* Mengatur lebar kolom */
+.col-no {
+  width: 5%;
+}
+.col-nama {
+  width: 30%;
+}
+.col-berat {
+  width: 20%;
+}
+.col-gambar {
+  width: 35%;
+}
+.col-action {
+  width: 10%;
+}

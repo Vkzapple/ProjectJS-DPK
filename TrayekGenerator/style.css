@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  left: 40%;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+#masukan {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 5px;
+  border: 1px solid #000;
+  resize: none;
+}
+button {
+  margin-bottom: 10px;
+}
+table {
+  border-collapse: collapse;
+  width: 200px;
+}
+td {
+  border: 2px solid black;
+  padding: 4px 8px;
+}
+.header {
+  text-align: center;
+  font-weight: bold;
+}
+.container {
+  width: 200px;
+}

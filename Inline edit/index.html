@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inline edit-epel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="input-group">
+      <label>Nama Buah</label>
+      <input type="text" id="namaBuah" />
+    </div>
+    <div class="input-group">
+      <label>Jumlah</label>
+      <input type="number" id="jumlah" />
+      <span>Kg</span>
+    </div>
+    <div class="input-group">
+      <label>Gambar</label>
+      <input type="text" id="gambar" />
+    </div>
+    <button id="addButton" onclick="tambahBuah()">Add</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="col-no">No</th>
+          <th class="col-nama">Nama Buah</th>
+          <th class="col-berat">Berat</th>
+          <th class="col-gambar">Gambar</th>
+          <th class="col-action">Action</th>
+        </tr>
+      </thead>
+      <tbody id="tabelBuah"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
