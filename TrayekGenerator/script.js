@@ -3,10 +3,8 @@ function buatTrayek() {
   let trayekArray = teksArea.split(",");
   let hasilHTML = "<table>";
 
-  // Tambah header table
   hasilHTML += '<tr><td class="header">Trayek</td></tr>';
 
-  // Proses setiap trayek
   for (let trayek of trayekArray) {
     if (trayek.trim().length > 0) {
       let kotaArray = trayek.trim().split(" ");
