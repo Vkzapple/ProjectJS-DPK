@@ -1,1 +1,35 @@
-<!-- TODO: Minmax -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>minmax evelly</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Angka</h2>
+    <input type="text" id="inputAngka" value="5,6,3,4,5,1,2,9,8,10" />
+    <button onclick="cariNilai()">Find</button>
+    <br /><br />
+    <table>
+      <tr>
+        <th>Min</th>
+        <th>Max</th>
+        <th>Average</th>
+      </tr>
+      <tr>
+        <td id="nilaiMin">1</td>
+        <td id="nilaiMax">10</td>
+        <td id="nilaiAvg">5.5</td>
+      </tr>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

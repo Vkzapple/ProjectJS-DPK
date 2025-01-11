@@ -1,1 +1,33 @@
-<!-- TODO: sorting -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sorting by evelly</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label>Angka (pisah dengan koma):</label><br />
+      <input type="text" id="angkaInput" /><br /><br />
+
+      <input type="radio" name="urutan" value="asc" checked /> Ascending
+      <input type="radio" name="urutan" value="desc" /> Descending<br /><br />
+
+      <button onclick="sortAngka()">Sort</button>
+    </div>
+
+    <div id="hasilTabel"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
